@@ -4,12 +4,10 @@
     <meta charset="UTF-8">
     <title>{{title}}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
+    <link rel="stylesheet" href="stylesheets/normalize.css">
+    <link rel="stylesheet" href="stylesheets/stylesheet.css">
     <link rel="Shortcut Icon" href="favicon.ico">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet'
-        type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
 </head>
 <body>
     <section class="page-header">
@@ -17,10 +15,10 @@
       <h2 class="project-tagline"><a style="color:#fff;" href="http://{{tagline}}">{{tagline}}</a></h2>
     </section>
     <section class="main-content">
-    <div class="region" v-for="group in groups">
-      <h3>{{group.name}}</h3>
+    <div class="region" v-for="package in packages">
+      <h3>{{package.name}}</h3>
         <ol class="list">
-            <li v-for="item in group.items">
+            <li v-for="item in package.items">
                 <div>
                     <strong>{{item.name}}</strong> {{item.description}}</div>
                 <div>
@@ -28,7 +26,7 @@
                         GitHub: <a href="https://github.com/{{item.github}}">https://github.com/{{item.github}}</a>
                     </div>
                     <div>
-                        NuGet: <a href="https://www.nuget.org/packages?q={{item.nuget}}">https://www.nuget.org/packages?q={{item.nuget}}</a>
+                        NuGet: <a href="https://www.nuget.org/packages/{{item.nuget}}">https://www.nuget.org/packages/{{item.nuget}}</a>
                     </div>
                 </div>
             </li>
@@ -41,7 +39,10 @@
 <p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
 -->
       <footer class="site-footer">
-        <span class="site-footer-credits">本页面由{{author}}编辑  作者微博：<a href="http://weibo.com/gsh1366143">神奇的耗子君</a></span>
+        <span class="site-footer-credits">本页面由{{author}}编辑  
+            GitHub: <a href="https://github.com/GuoSongHao">{{author}}</a>
+            微博：<a href="http://weibo.com/gsh1366143">神奇的耗子君</a>
+        </span>
       </footer>
 
     </section>
