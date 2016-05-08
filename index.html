@@ -35,13 +35,10 @@
                             </div>
                         </div>
                     </li>
+                    <li>
+                        <a class="close1x" href="#">×</a>
+                    </li>
                 </ul>
-                <!--<div class="search">
-                    <form>
-                        <input type="text" value="" placeholder="Search...">
-                        <input type="submit" value="">
-                    </form>
-                </div>-->
                 <div class="clearfix"></div>
             </div>
         </div>
@@ -83,10 +80,11 @@
     <script src="js/jquery.pin.js"></script>
     <script src="js/megamenu.js"></script>
     <script>
-    $(document).ready(function () {
-        $(".megamenu").megamenu();
-        $(".mega_nav").pin()
-    });
+        $(document).ready(function () {
+            $(".megamenu").megamenu();
+            $(".mega_nav").pin();
+            $(".close1x").on("click", function () { $(".pin-wrapper").remove(); });
+        });
     </script>
 </body>
 </html>
