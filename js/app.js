@@ -1,20 +1,22 @@
 var viewModel = {
     title: "开源项目",
-    projectName: "开发中常用的一些开源项目",
-    tagline: "aspnetstudy.github.io",
+    projectName: "神奇的耗子君",
+    tagline: "开发中常用的一些开源项目",
     author: "郭松浩",
     packages:
     [
         {
-            name: "数据持久化/ORM",
+            title: "数据持久",
+            name: "数据持久/ORM",
             items: [
                 { name: "Dapper.NET", description: "A simple object mapper for .Net", github: "StackExchange/dapper-dot-net", nuget: "Dapper" },
                 { name: "PetaPoco", description: "A tiny ORM-ish thing for your POCO's", github: "CollaboratingPlatypus/PetaPoco", nuget: "PetaPoco" },
-                { name: "ServiceStack.OrmLite", description: "Fast, Simple, Typed ORM for .NET", github: "ServiceStack/ServiceStack.OrmLite", nuget: "ServiceStack.OrmLite" },
+                { name: "OrmLite", description: "Fast, Simple, Typed ORM for .NET", github: "ServiceStack/ServiceStack.OrmLite", nuget: "ServiceStack.OrmLite" },
                 { name: "Xinchen.XLinq", description: "一个轻量级ORM框架,使用方法和EF一样", github: "GuoSongHao", nuget: "Xinchen.XLinq" }
             ]
         },
         {
+            title: "依赖注入",
             name: "依赖注入/IOC",
             items: [
                 { name: "Autofac", description: "An addictive .NET IoC container", github: "autofac/Autofac", nuget: "Autofac" },
@@ -22,13 +24,15 @@ var viewModel = {
             ]
         },
         {
-            name: "面向切面编程/AOP",
+            title: "面向切面",
+            name: "面向切面/AOP",
             items: [
                 { name: "LinFu.DynamicProxy", description: "A small, lightweight dynamic proxy library for the .NET framework", github: "philiplaureano/LinFu.DynamicProxy", nuget: "LinFu.DynamicProxy.OfficialRelease" },
                 { name: "SimpleAspects", description: "A simple AOP framework", github: "hcesar/SimpleAspects", nuget: "SimpleAspects" }
             ]
         },
         {
+            title: "对象映射",
             name: "对象映射/ObjectMapper",
             items: [
                 { name: "AutoMapper", description: "A convention-based object-object mapper in .NET", github: "AutoMapper/AutoMapper", nuget: "AutoMapper" },
@@ -37,6 +41,7 @@ var viewModel = {
             ]
         },
         {
+            title: "网络服务",
             name: "网络服务/Network",
             items: [
                 { name: "Flux", description: "Lightweight web server for .NET and Mono", github: "markrendle/Flux", nuget: "Flux" },
@@ -47,6 +52,7 @@ var viewModel = {
             ]
         },
         {
+            title: "日志组件",
             name: "日志组件/Logging",
             items: [
                 { name: "log4net", description: "The Apache log4net library is a tool to help the programmer output log statements to a variety of output targets", github: "apache/log4net", nuget: "log4net" },
@@ -54,6 +60,7 @@ var viewModel = {
             ]
         },
         {
+            title: "其它项目",
             name: "其它项目/Others",
             items: [
                 { name: "EPPlus", description: "EPPlus is a .net library that reads and writes Excel 2007/2010 files using the Open Office Xml format (xlsx)", github: "wenhx/EPPlus", nuget: "EPPlus" },
