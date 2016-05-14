@@ -59,6 +59,14 @@ var viewModel = {
                 { name: "NLog", description: "Advanced .NET, Silverlight and Xamarin Logging", github: "NLog/NLog", nuget: "NLog" }
             ]
         },
+		{
+            title: "序列化",
+            name: "序列化/Serialize",
+            items: [
+				{ name: "Json.NET", description: "Json.NET is a popular high-performance JSON framework for .NET", github: "JamesNK/Newtonsoft.Json", nuget: "Newtonsoft.Json" },
+                { name: "SharpSerializer", description: "SharpSerializer ports to MonoForAndroid, MonoTouch, WindowsPhone", github: "moljac/MonoVersalSharpSerializer", nuget: "SharpSerializer" }
+            ]
+        },
         {
             title: "其它项目",
             name: "其它项目/Others",
@@ -66,8 +74,7 @@ var viewModel = {
                 { name: "EPPlus", description: "EPPlus is a .net library that reads and writes Excel 2007/2010 files using the Open Office Xml format (xlsx)", github: "wenhx/EPPlus", nuget: "EPPlus" },
                 { name: "FluentValidation", description: "A small validation library for .NET that uses a fluent interface and lambda expressions for building validation rules", github: "JeremySkinner/FluentValidation", nuget: "FluentValidation" },
                 { name: "FluentXml", description: ".NET XML library providing fluent XML for querying and creating XML documents", github: "remi/FluentXml", nuget: "FluentXml" },
-                { name: "HtmlAgilityPack", description: "This is an agile HTML parser that builds a read/write DOM and supports plain XPATH or XSLT", github: "floytinax/HtmlAgilityPack", nuget: "HtmlAgilityPack" },
-                { name: "Json.NET", description: "Json.NET is a popular high-performance JSON framework for .NET", github: "JamesNK/Newtonsoft.Json", nuget: "Newtonsoft.Json" },
+                { name: "HtmlAgilityPack", description: "This is an agile HTML parser that builds a read/write DOM and supports plain XPATH or XSLT", github: "floytinax/HtmlAgilityPack", nuget: "HtmlAgilityPack" },                
                 { name: "LiteDB", description: "A simple embedded .NET NoSQL Document Store in a single data file", github: "mbdavid/LiteDB", nuget: "LiteDB" },
                 { name: "NMemory", description: "NMemory is a lightweight non-persistent in-memory relational database engine that is purely written in C# and can be hosted by .NET applications", github: "tamasflamich/nmemory", nuget: "NMemory" },
                 { name: "Quartz.NET", description: "Quartz Enterprise Scheduler .NET", github: "quartznet/quartznet", nuget: "Quartz" }
