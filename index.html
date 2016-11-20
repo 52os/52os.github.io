@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-cn">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/stylesheet.css">
-    <link rel="stylesheet" href="css/megamenu.css" />
     <link rel="Shortcut Icon" href="favicon.ico">
 </head>
 <body id="app">
@@ -16,33 +15,6 @@
         <h1 class="project-name">{{projectName}}</h1>
         <h2 class="project-tagline">{{tagline}}</h2>
     </section>
-    <div class="mega_nav">
-        <div class="container">
-            <div class="menu_sec">
-                <!-- start header menu -->
-                <ul class="megamenu skyblue">
-                    <li class="grid" v-for="package in packages">
-                        <a class="color1" href="#{{package.name}}">{{package.title}}</a>
-                        <div class="megapanel">
-                            <div class="row">
-                                <div class="col6">
-                                    <div class="h_nav">
-                                        <ul>
-                                            <li v-for="item in package.items"><a href="#{{item.name}}">{{item.name}}</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="right">
-                        <a class="close1x" style="font-size:12px;" href="#">隐藏</a>
-                    </li>
-                </ul>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-    </div>
     <section class="main-content">
         <div class="region" v-for="package in packages">
             <h3 id="{{package.name}}">{{package.name}}</h3>
@@ -76,15 +48,5 @@
     </section>
     <script src="js/vue.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery.pin.js"></script>
-    <script src="js/megamenu.js"></script>
-    <script>
-        $(document).ready(function () {
-            $(".megamenu").megamenu();
-            $(".mega_nav").pin();
-            $(".close1x").on("click", function () { $(".pin-wrapper").remove(); });
-        });
-    </script>
 </body>
 </html>
