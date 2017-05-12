@@ -1,6 +1,6 @@
 var viewModel = {
     title: "开源项目",
-    projectName: "神奇的耗子君",
+    projectName: "asp.net study",
     tagline: "开发中常用的一些开源项目",
     author: "郭松浩",
     packages:
@@ -12,7 +12,7 @@ var viewModel = {
                 { name: "Dapper.NET", description: "A simple object mapper for .Net", github: "StackExchange/dapper-dot-net", nuget: "Dapper" },
                 { name: "PetaPoco", description: "A tiny ORM-ish thing for your POCO's", github: "CollaboratingPlatypus/PetaPoco", nuget: "PetaPoco" },
                 { name: "OrmLite", description: "Fast, Simple, Typed ORM for .NET", github: "ServiceStack/ServiceStack.OrmLite", nuget: "ServiceStack.OrmLite" },
-                { name: "Xinchen.XLinq", description: "一个轻量级ORM框架,使用方法和EF一样", github: "GuoSongHao", nuget: "Xinchen.XLinq" }
+                { name: "Xinchen.XLinq", description: "一个轻量级ORM框架,使用方法和EF一样", github: "", nuget: "Xinchen.XLinq" }
             ]
         },
         {
