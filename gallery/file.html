@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html id="app" lang="zh">
+<head>
+    <meta charset="utf-8">
+    <title>{{Title}}</title>
+    <style type="text/css">
+        .header {
+            color: lightblue;
+            height: 50px;
+        }
+
+        .footer {
+            text-align: center;
+            height: 50px;
+        }
+
+        .pic_box img {
+            width: 479px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>{{Title}}</h1>
+    </div>
+    <div class="page" style="margin: 50px; font-size: 50px;">
+        <a href="javascript:GotoPage({{PageIndex-1}})">上一页</a>
+        <span>{{PageIndex}}/{{TotalPages}} </span>
+        <a href="javascript:GotoPage({{PageIndex+1}})">下一页</a>
+    </div>
+
+    <div class="pic_box">
+        <a v-for="fileItem in Data" href="{{fileItem.FileUrl}}">
+            <img src="{{fileItem.FileUrl}}" />
+        </a>
+    </div>
+
+    <div class="page" style="margin: 50px; font-size: 50px;">
+        <a href="javascript:GotoPage({{PageIndex-1}})">上一页</a>
+        <span>{{PageIndex}}/{{TotalPages}} </span>
+        <a href="javascript:GotoPage({{PageIndex+1}})">下一页</a>
+    </div>
+
+    <div class="footer">
+        <h6>Copyright {{Title}} 2021&copy;</h6>
+    </div>
+
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/vue.min.js"></script>
+    <script src="/static/js/xdate.js"></script>
+    <script src="/static/js/app.js"></script>
+</body>
+</html>

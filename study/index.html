@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>江山如画</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
+    <link rel="stylesheet" href="/study/css/bootstrap.css" />
+    <link rel="stylesheet" href="/study/css/normalize.css">
+    <link rel="stylesheet" href="/study/css/stylesheet.css">
+</head>
+<body id="app">
+    <section class="page-header">
+        <h1 class="project-name">{{projectName}}</h1>
+        <h2 class="project-tagline">{{tagline}}</h2>
+    </section>
+    <section class="main-content">
+        <div class="region" v-for="package in packages">
+            <h3 id="{{package.name}}">{{package.name}}</h3>
+            <ol class="list">
+                <li v-for="item in package.items">
+                    <div id="{{item.name}}">
+                        <strong>{{item.name}}</strong> {{item.description}}
+                    </div>
+                    <div>
+                        <div>
+                            GitHub: <a href="https://github.com/{{item.github}}">https://github.com/{{item.github}}</a>
+                        </div>
+                        <div>
+                            NuGet: <a href="https://www.nuget.org/packages/{{item.nuget}}">https://www.nuget.org/packages/{{item.nuget}}</a>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+        </div>
+        <!--
+        <h3>技术支持</h3>
+
+        <p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
+        -->
+        <footer class="site-footer">
+            <span class="site-footer-credits">
+                本页面由{{author}}编辑
+            </span>
+        </footer>
+    </section>
+    <script src="/study/js/vue.js"></script>
+    <script src="/study/js/app.js"></script>
+</body>
+</html>
